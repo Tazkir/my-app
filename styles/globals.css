@@ -1,16 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  background-color: #16161a;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  @apply text-white;
+}
+p {
+  color: #94a1b2;
+}
+
+.dropdown-link {
+  @apply flex p-2 hover:rounded-sm;
+}
+
+.dropdown-link:hover {
+  @apply bg-zinc-800/70;
+}
+
+.menu-content {
+  background: rgba(22, 22, 26, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: none;
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+}
+
+.navbar {
+  @apply shadow-md;
+  z-index: 1;
+  background: rgba(22, 22, 26, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: none;
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+}
+
+.mask:after {
+  mask: linear-gradient(rgb(255 255 255) 0 0) content-box,
+    linear-gradient(rgb(255 255 255) 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
