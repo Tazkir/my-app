@@ -6,7 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #16161a;
+  background-color: #121212;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
@@ -51,10 +51,66 @@ p {
   -webkit-transition: 0.3s ease-in;
 }
 
-.mask:after {
-  mask: linear-gradient(rgb(255 255 255) 0 0) content-box,
-    linear-gradient(rgb(255 255 255) 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
+.rightCSS {
+  overflow: hidden;
+  --offset: 20vw;
+  --move-initial: calc(50% + var(--offset));
+  --move-final: calc(-120% + var(--offset));
+}
+.rightCSS div {
+  width: fit-content;
+  text-overflow: ellipsis;
+  overflow: visible;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  animation: CSSright linear 40s infinite;
+  transition: all 0.5s ease-in-out 0s;
+}
+.rightCSS div p {
+  padding: 5px 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+@keyframes CSSright {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+.rightCSS:hover div {
+  animation-play-state: paused;
+}
+
+@media (max-width: 575.98px) {
+  .rightCSS {
+    --move-initial: calc(1% + var(--offset));
+    --move-final: calc(-105% + var(--offset));
+  }
+  .rightCSS div p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rightCSS {
+    --move-initial: calc(30% + var(--offset));
+    --move-final: calc(-105% + var(--offset));
+  }
+  .rightCSS div p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .rightCSS {
+    --move-initial: calc(35% + var(--offset));
+    --move-final: calc(-110% + var(--offset));
+  }
 }

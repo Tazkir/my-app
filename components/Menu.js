@@ -29,6 +29,11 @@ function Menu() {
                       Work
                     </DropdownLink>
                   </Menubar.Item>
+                  <Menubar.Item>
+                    <DropdownLink className="dropdown-link" href="/contact">
+                      Contact
+                    </DropdownLink>
+                  </Menubar.Item>
                 </Menubar.Content>
               </AnimatePresence>
             </m.div>

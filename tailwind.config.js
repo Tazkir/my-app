@@ -23,6 +23,11 @@ module.exports = {
               'rotate(360.001deg) translate3d(15px, 0, 0) rotate(-360.001deg)',
           },
         },
+        btnpulse: {
+          '0%': { 'box-shadow': '0 0 0 0 theme("colors.violet.400")' },
+          '50%': { 'box-shadow': '0 0 0 0 theme("colors.violet.400/50")' },
+          '100%': { 'box-shadow': '0 0 0 11px theme("colors.violet.400/0")' },
+        },
       },
     },
   },
