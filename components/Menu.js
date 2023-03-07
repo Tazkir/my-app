@@ -18,19 +18,28 @@ function Menu() {
           <Menubar.Portal>
             <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
               <AnimatePresence>
-                <Menubar.Content className="menu-content divide-y-2 divide-zinc-600 hover:divide-zinc-600/50 p-2 max-sm:top-5 sm:top-6 absolute right-[-25px] max-sm:w-[10em] sm:w-[13em] shadow-md rounded-md">
+                <Menubar.Content className="menu-content divide-y divide-slate-500 p-2 max-sm:top-5 sm:top-6 absolute right-[-10px] max-sm:w-[10em] sm:w-[13em] shadow-md rounded-md">
                   <Menubar.Item>
-                    <DropdownLink className="dropdown-link" href="/about">
+                    <DropdownLink
+                      className="dropdown-link hover:bg-violet-500"
+                      href="/about"
+                    >
                       About
                     </DropdownLink>
                   </Menubar.Item>
                   <Menubar.Item>
-                    <DropdownLink className="dropdown-link" href="/work">
+                    <DropdownLink
+                      className="dropdown-link hover:bg-violet-500"
+                      href="/work"
+                    >
                       Work
                     </DropdownLink>
                   </Menubar.Item>
                   <Menubar.Item>
-                    <DropdownLink className="dropdown-link" href="/contact">
+                    <DropdownLink
+                      className="dropdown-link hover:bg-violet-500"
+                      href="/contact"
+                    >
                       Contact
                     </DropdownLink>
                   </Menubar.Item>

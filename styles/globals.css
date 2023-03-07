@@ -41,14 +41,13 @@ p {
 }
 
 .navbar {
-  @apply shadow-md;
   z-index: 1;
-  background: rgba(22, 22, 26, 0.1);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(197, 197, 197, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
   border: none;
-  transition: 0.3s ease-in;
-  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
 }
 
 .rightCSS {
@@ -84,9 +83,9 @@ p {
     transform: translate3d(var(--move-final), 0, 0);
   }
 }
-.rightCSS:hover div {
+/* .rightCSS:hover div {
   animation-play-state: paused;
-}
+} */
 
 @media (max-width: 575.98px) {
   .rightCSS {
@@ -112,5 +111,56 @@ p {
   .rightCSS {
     --move-initial: calc(35% + var(--offset));
     --move-final: calc(-110% + var(--offset));
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    display: none;
+  }
+}
+
+section:first-of-type {
+  overflow: hidden;
+  right: 0;
+  top: 25px;
+  position: absolute;
+  color: white;
+  min-height: 150px;
+  height: calc(2 * var(--buffer));
+  aspect-ratio: 1;
+  display: flex;
+  place-items: center;
+}
+
+section:last-of-type {
+  display: grid;
+  gap: 2rem;
+}
+
+.ring__s {
+  --char-count: 40;
+  --inner-angle: calc((360 / var(--char-count, 40)) * 1deg);
+  --character-width: 1;
+  --radius: calc((var(--character-width, 1) / 0.15643446504023087) * -1ch);
+  --font-size: 0.5rem;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: calc(var(--font-size, 1) * 1rem);
+  animation: rotation 6s infinite linear;
+  position: relative;
+}
+.char {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+    rotate(calc(var(--inner-angle) * var(--char-index)))
+    translateY(var(--radius));
+}
+@keyframes rotation {
+  to {
+    rotate: -360deg;
   }
 }

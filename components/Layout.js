@@ -45,8 +45,8 @@ function Layout({ title, children }) {
           <nav
             className={
               color
-                ? 'navbar flex h-12 items-center px-5 justify-between shadow-md fixed top-0 left-0 right-0'
-                : 'flex bg-[#16161a] h-12 items-center px-5 justify-between shadow-md fixed top-0 left-0 right-0'
+                ? 'navbar flex h-14 items-center px-5 justify-between shadow-lg fixed top-0 left-0 right-0'
+                : 'flex  h-14 items-center px-5 justify-between shadow-lg fixed top-0 left-0 right-0'
             }
           >
             <Link className="logo" href="/">
@@ -58,8 +58,8 @@ function Layout({ title, children }) {
         </header>
 
         <main className="container m-auto mt-14 px-4">
-          <div className="text-yellow-400 w-full animate-pulse flex flex-row max-sm:flex-col items-center justify-center gap-2">
-            <h1>Under Construction</h1>{' '}
+          <div className="text-yellow-400 pt-2 w-full text-center animate-pulse flex flex-row items-center justify-center gap-2">
+            <h1>Under Development</h1>{' '}
             <WrenchScrewdriverIcon className="h-4 w-4 text-red-500" />
           </div>
           {children}

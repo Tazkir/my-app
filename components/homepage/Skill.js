@@ -2,15 +2,17 @@ import React from 'react';
 import Image from 'next/image';
 
 function Skill() {
-  const numbers = [
+  const skills = [
     'NextJs',
     'ReactJs',
+    'React Native',
     'Vercel',
     'MongoDB',
     'Firebase',
     'Tailwind Css',
     'Material UI',
     'Framer Motion',
+    'Stripe',
     'Sanity.io',
     'AWS S3',
     'Styled Component',
@@ -22,15 +24,20 @@ function Skill() {
     'HTML',
     'CSS',
     'Javascript',
+    'Github',
     'Express',
     'Cors',
+    'Redux Toolkit',
+    'SWR',
+    'React Query',
     'Framer',
     'ThreeJS',
-    'Three-Drei',
+    'React-Three-Drei',
     'Figma',
     'Photoshop',
   ];
-  const listItems = numbers.map((number) => <p>{number}</p>);
+  const listItems = skills.map((skill) => <p>{skill}</p>);
+
   return (
     <div class="rightCSS li rounded-full max-sm:mt-[130px] mt-[150px]">
       <div>{listItems}</div>

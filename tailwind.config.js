@@ -8,25 +8,23 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        float: 'float 12s infinite linear',
-        'float-fast': 'float 10s infinite linear',
-        'float-fastest': 'float 8s infinite linear',
+        text: 'text 5s ease infinite',
       },
       keyframes: {
-        float: {
-          '0%': {
-            transform:
-              ' rotate(-0.001deg) translate3d(15px, 0, 0) rotate(-0.001deg)',
-          },
-          '100%': {
-            transform:
-              'rotate(360.001deg) translate3d(15px, 0, 0) rotate(-360.001deg)',
-          },
-        },
         btnpulse: {
           '0%': { 'box-shadow': '0 0 0 0 theme("colors.violet.400")' },
           '50%': { 'box-shadow': '0 0 0 0 theme("colors.violet.400/50")' },
           '100%': { 'box-shadow': '0 0 0 11px theme("colors.violet.400/0")' },
+        },
+        text: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
         },
       },
     },
