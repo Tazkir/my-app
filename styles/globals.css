@@ -53,9 +53,37 @@ p {
 .rightCSS {
   overflow: hidden;
   --offset: 20vw;
-  --move-initial: calc(50% + var(--offset));
+  --move-initial: calc(25% + var(--offset));
   --move-final: calc(-120% + var(--offset));
 }
+
+@media (max-width: 991.98px) {
+  .rightCSS {
+    --move-initial: calc(10% + var(--offset));
+    --move-final: calc(-110% + var(--offset));
+  }
+}
+
+@media (max-width: 768px) {
+  .rightCSS {
+    --move-initial: calc(10% + var(--offset));
+    --move-final: calc(-105% + var(--offset));
+  }
+  .rightCSS div p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rightCSS {
+    --move-initial: calc(9% + var(--offset));
+    --move-final: calc(-105% + var(--offset));
+  }
+  .rightCSS div p {
+    font-size: 22px;
+  }
+}
+
 .rightCSS div {
   width: fit-content;
   text-overflow: ellipsis;
@@ -86,33 +114,6 @@ p {
 /* .rightCSS:hover div {
   animation-play-state: paused;
 } */
-
-@media (max-width: 575.98px) {
-  .rightCSS {
-    --move-initial: calc(1% + var(--offset));
-    --move-final: calc(-105% + var(--offset));
-  }
-  .rightCSS div p {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 768px) {
-  .rightCSS {
-    --move-initial: calc(30% + var(--offset));
-    --move-final: calc(-105% + var(--offset));
-  }
-  .rightCSS div p {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .rightCSS {
-    --move-initial: calc(35% + var(--offset));
-    --move-final: calc(-110% + var(--offset));
-  }
-}
 
 @media (max-width: 300px) {
   body {

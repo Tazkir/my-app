@@ -24,6 +24,7 @@ function Skill() {
     'HTML',
     'CSS',
     'Javascript',
+    'Typescript',
     'Github',
     'Express',
     'Cors',
