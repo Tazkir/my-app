@@ -108,6 +108,59 @@ const data = {
         'https://res.cloudinary.com/simohya/image/upload/v1678341532/porfolio/next-js_nqv6bm.png',
       ],
     },
+    {
+      id: '9',
+      name: 'Global Warning ThreeJs',
+      image:
+        'https://res.cloudinary.com/simohya/image/upload/v1678353329/porfolio/globalwarning_rbeexq.png',
+      link: 'https://global-warning-threejs.netlify.app/',
+      stacks: [
+        'https://res.cloudinary.com/simohya/image/upload/v1678353610/porfolio/Three_pmakgb.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678353546/porfolio/drei_zztxur.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678351380/porfolio/styledcomponents_hu8bnx.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678353418/porfolio/reactjs_twn8bu.png',
+      ],
+    },
+    {
+      id: '10',
+      name: 'Drink ThreeJs',
+      image:
+        'https://res.cloudinary.com/simohya/image/upload/v1678353799/porfolio/drink_vvhkzu.png',
+      link: 'https://ibunda-punya.netlify.app/',
+      stacks: [
+        'https://res.cloudinary.com/simohya/image/upload/v1678353610/porfolio/Three_pmakgb.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678353546/porfolio/drei_zztxur.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678352369/porfolio/materialui_zl59wf.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678353418/porfolio/reactjs_twn8bu.png',
+      ],
+    },
+    {
+      id: '11',
+      name: 'Tesla Clone',
+      image:
+        'https://res.cloudinary.com/simohya/image/upload/v1678354236/porfolio/teslaclone_hilq04.png',
+      link: 'https://tesla-demo-clone.netlify.app/',
+      stacks: [
+        'https://res.cloudinary.com/simohya/image/upload/v1678354306/porfolio/redux_hmgi1z.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678352369/porfolio/materialui_zl59wf.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678351380/porfolio/styledcomponents_hu8bnx.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678353418/porfolio/reactjs_twn8bu.png',
+      ],
+    },
+    {
+      id: '12',
+      name: 'Disney Clone',
+      image:
+        'https://res.cloudinary.com/simohya/image/upload/v1678354464/porfolio/disney_gmwgam.png',
+      link: 'https://disney-pls-cln.netlify.app/',
+      stacks: [
+        'https://res.cloudinary.com/simohya/image/upload/v1678354648/porfolio/slick-carousel_o7ahyz.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678351380/porfolio/styledcomponents_hu8bnx.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678354306/porfolio/redux_hmgi1z.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678341532/porfolio/firebase_axkyy2.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678353418/porfolio/reactjs_twn8bu.png',
+      ],
+    },
   ],
 };
 
