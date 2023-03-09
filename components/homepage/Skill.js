@@ -16,6 +16,7 @@ function Skill() {
     'Sanity.io',
     'AWS S3',
     'Styled Component',
+    'GraphQL',
     'Prisma',
     'PHP',
     'NextAuth',
