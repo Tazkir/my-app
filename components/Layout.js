@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Menu from './Menu';
+import Social from './Social';
 
 function Layout({ title, children }) {
   const [color, setColor] = useState(false);
@@ -57,7 +58,8 @@ function Layout({ title, children }) {
 
         <main className="container m-auto mt-14 px-4">{children}</main>
 
-        <footer className="text-white flex h-14 justify-center items-center shadow-inner">
+        <footer className="text-white flex max-sm:flex-col p-5 h-14 items-center place-content-evenly shadow-inner">
+          <Social />
           <span>Copyright © 2023</span>
         </footer>
       </div>
