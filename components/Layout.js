@@ -5,7 +5,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Menu from './Menu';
 import { WrenchScrewdriverIcon } from '@heroicons/react/24/solid';
-// import baffle from 'baffle';
 
 function Layout({ title, children }) {
   const [color, setColor] = useState(false);
@@ -22,24 +21,24 @@ function Layout({ title, children }) {
     window.addEventListener('scroll', navColor);
   }, []);
 
-  // useEffect(() => {
-  //   const target = baffle('.logo');
-  //   target.set({
-  //     characters: 'abcdehijklmqrstuvwxyz',
-  //     speed: 50,
-  //   });
-  //   target.start();
-  //   target.reveal(1000, 1000);
-  // }, []);
-
   return (
     <>
       <Head>
-        <title>{title ? title + ' | Tazkir Furqan' : 'Tazkir Furqan'}</title>
+        <title>{title ? `${title} | Tazkir Furqan` : 'Tazkir Furqan'}</title>
         <meta
           name="description"
-          content="Malaysian React and Nextjs Develepor"
+          content="Expert Next.js and React Developer in Nilai, Malaysia - Freelance Fullstack Developer Specializing in E-commerce, Landing Pages, and More"
         />
+        <meta
+          name="description"
+          content="Top-rated Web Developer in Nilai, Malaysia - Next.js, React, and React Native Expert for Frontend and Backend Development, Including E-commerce and Landing Pages"
+        />
+        <meta
+          name="description"
+          content="Professional Next.js Developer in Nilai, Malaysia - Delivering High-quality Web and Mobile Solutions with React Native, E-commerce and Fullstack Expertise"
+        />
+        <meta name="description" content="Tazkir Furqan" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex min-h-screen flex-col justify-between">
@@ -51,9 +50,7 @@ function Layout({ title, children }) {
                 : 'flex  h-14 items-center px-5 justify-between shadow-lg fixed top-0 left-0 right-0'
             }
           >
-            <Link className="logo" href="/">
-              Tazkir Furqan
-            </Link>
+            <Link href="/">Tazkir Furqan</Link>
 
             <Menu />
           </nav>

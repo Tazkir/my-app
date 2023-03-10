@@ -21,7 +21,7 @@ function Menu() {
                 <Menubar.Content className="menu-content divide-y divide-slate-500 p-2 max-sm:top-5 sm:top-6 absolute right-[-10px] max-sm:w-[10em] sm:w-[13em] shadow-md rounded-md">
                   <Menubar.Item>
                     <DropdownLink
-                      className="dropdown-link hover:bg-violet-500"
+                      className="dropdown-link hover:bg-violet-500 focus:outline-none"
                       href="/about"
                     >
                       About
@@ -29,7 +29,7 @@ function Menu() {
                   </Menubar.Item>
                   <Menubar.Item>
                     <DropdownLink
-                      className="dropdown-link hover:bg-violet-500"
+                      className="dropdown-link hover:bg-violet-500 focus:outline-none"
                       href="/work"
                     >
                       Work
@@ -37,10 +37,19 @@ function Menu() {
                   </Menubar.Item>
                   <Menubar.Item>
                     <DropdownLink
-                      className="dropdown-link hover:bg-violet-500"
+                      className="dropdown-link hover:bg-violet-500 focus:outline-none"
                       href="/contact"
                     >
                       Contact
+                    </DropdownLink>
+                  </Menubar.Item>
+                  <Menubar.Item>
+                    <DropdownLink
+                      className="dropdown-link hover:bg-violet-500 focus:outline-none"
+                      href="https://read.cv/tazkir"
+                      target="_blank"
+                    >
+                      Read.CV
                     </DropdownLink>
                   </Menubar.Item>
                 </Menubar.Content>

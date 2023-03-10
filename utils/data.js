@@ -110,7 +110,7 @@ const data = {
     },
     {
       id: '9',
-      name: 'Global Warning ThreeJs',
+      name: 'Global Warn ThreeJs',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678353329/porfolio/globalwarning_rbeexq.png',
       link: 'https://global-warning-threejs.netlify.app/',

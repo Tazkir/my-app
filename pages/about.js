@@ -12,7 +12,7 @@ function About() {
           <Image
             className="w-24 h-24 md:w-48 md:h-48 md:mt-10 md:rounded-lg rounded-full mx-auto"
             src={place}
-            alt="Tazkir Furqan"
+            alt=""
             width="384"
             height="512"
           />
