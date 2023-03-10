@@ -9,6 +9,7 @@ function Skill() {
     'Vercel',
     'MongoDB',
     'Firebase',
+    'Supabase',
     'Tailwind Css',
     'Material UI',
     'Framer Motion',

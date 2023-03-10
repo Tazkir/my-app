@@ -21,7 +21,7 @@ function About() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.5, ease: 'easeOut' }}
             exit={{ opacity: 1 }}
-            className="pt-6 md:p-8 text-center md:text-left space-y-4"
+            className="pt-6 md:p-8 text-center md:text-left space-y-4 "
           >
             <div className="overflow-hidden">
               <m.h1
@@ -33,7 +33,7 @@ function About() {
                 Recently About Me
               </m.h1>
             </div>
-            <p className="text-lg font-medium">
+            <p className="text-md font-serif">
               Welcome to my portfolio website! My name is Tazkir Furqan, and I
               am a passionate and dedicated self-taught programmer. At 18 years
               old, I began my programming journey while studying for a diploma
@@ -42,7 +42,7 @@ function About() {
               quickly discovered my love for web development after learning
               HTML, CSS, and JavaScript.
             </p>
-            <p className="text-lg font-medium">
+            <p className="text-md font-serif">
               Since then, I have continued to grow my skills in web development
               and have become proficient in using React and Next.js. Despite the
               challenges posed by COVID-19 and financial difficulties, I remain
@@ -51,7 +51,7 @@ function About() {
               all subjects except for my internship due to the aforementioned
               challenges.
             </p>
-            <p className="text-lg font-medium">
+            <p className="text-md font-serif">
               However, I have honed my skills as a self-taught programmer and
               can learn any stack, including Java and object-oriented
               programming. On this website, you will find examples of{' '}

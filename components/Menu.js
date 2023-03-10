@@ -24,7 +24,7 @@ function Menu() {
                       className="dropdown-link hover:bg-violet-500 focus:outline-none"
                       href="/about"
                     >
-                      About
+                      About Me
                     </DropdownLink>
                   </Menubar.Item>
                   <Menubar.Item>
@@ -32,7 +32,7 @@ function Menu() {
                       className="dropdown-link hover:bg-violet-500 focus:outline-none"
                       href="/work"
                     >
-                      Work
+                      My Work
                     </DropdownLink>
                   </Menubar.Item>
                   <Menubar.Item>
@@ -40,7 +40,7 @@ function Menu() {
                       className="dropdown-link hover:bg-violet-500 focus:outline-none"
                       href="/contact"
                     >
-                      Contact
+                      Contact Me
                     </DropdownLink>
                   </Menubar.Item>
                   <Menubar.Item>
