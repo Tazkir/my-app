@@ -57,10 +57,10 @@ function Layout({ title, children }) {
         </header>
 
         <main className="container m-auto mt-14 px-4">
-          <div className="text-yellow-400 pt-2 w-full text-center animate-pulse flex flex-row items-center justify-center gap-2">
+          {/* <div className="text-yellow-400 pt-2 w-full text-center animate-pulse flex flex-row items-center justify-center gap-2">
             <h1>Under Development</h1>{' '}
             <WrenchScrewdriverIcon className="h-4 w-4 text-red-500" />
-          </div>
+          </div> */}
           {children}
         </main>
 
