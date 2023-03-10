@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Menu from './Menu';
-import { WrenchScrewdriverIcon } from '@heroicons/react/24/solid';
 
 function Layout({ title, children }) {
   const [color, setColor] = useState(false);
@@ -56,13 +55,7 @@ function Layout({ title, children }) {
           </nav>
         </header>
 
-        <main className="container m-auto mt-14 px-4">
-          {/* <div className="text-yellow-400 pt-2 w-full text-center animate-pulse flex flex-row items-center justify-center gap-2">
-            <h1>Under Development</h1>{' '}
-            <WrenchScrewdriverIcon className="h-4 w-4 text-red-500" />
-          </div> */}
-          {children}
-        </main>
+        <main className="container m-auto mt-14 px-4">{children}</main>
 
         <footer className="text-white flex h-14 justify-center items-center shadow-inner">
           <span>Copyright © 2023</span>

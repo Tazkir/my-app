@@ -12,14 +12,14 @@ function contact() {
           animate={{ y: '20%', opacity: 1 }}
           transition={{ duration: 0.75, ease: 'easeOut' }}
           exit={{ opacity: 1 }}
-          className="flex flex-col items-center justify-center w-full space-y-10"
+          className=" flex flex-col items-center justify-center w-full space-y-10"
         >
           <div className="overflow-hidden">
             <m.h1
               initial={{ y: '100%' }}
               animate={{ y: 0 }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="font-semibold text-[5rem] max-sm:text-[3rem] flex flex-row gap-3 items-center justify-center"
+              className=" font-semibold text-[5rem] max-sm:text-[3rem] flex flex-row gap-3 items-center justify-center"
             >
               Contact Me <SparklesIcon className="w-10 h-10 text-purple-500" />
             </m.h1>
