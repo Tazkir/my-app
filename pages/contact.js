@@ -27,7 +27,7 @@ function contact() {
           <div className="text-center flex flex-col h-auto pb-10">
             <h1 className="text-[2em] max-sm:text-[20px]">
               Ready to start your next <b>web development</b> project? Let's
-              <i> work together</i> to bring your vision to life.
+              <i> work together </i> to bring your vision to life.
               <div>
                 <Link
                   href="mailto: tazkirfurqan@gmail.com"
