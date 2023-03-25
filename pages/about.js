@@ -3,19 +3,26 @@ import Layout from '../components/Layout';
 import place from '../public/about.png';
 import Link from 'next/link';
 import { motion as m, AnimatePresence } from 'framer-motion';
+import Skill from '../components/about/Skill';
 
 function About() {
   return (
     <Layout title="About">
       <AnimatePresence>
         <figure className="md:flex rounded-xl mt-10 p-8 md:p-0 overflow-hidden">
-          <Image
-            className="w-24 h-24 md:w-48 md:h-48 md:mt-10 md:rounded-lg rounded-full mx-auto"
-            src={place}
-            alt=""
-            width="384"
-            height="512"
-          />
+          <m.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5, ease: 'easeOut' }}
+            exit={{ opacity: 1 }}
+            className="w-full md:w-[100em]"
+          >
+            <Image
+              className="w-24 h-24 md:w-48 md:h-48 md:mt-10 md:rounded-lg rounded-full mx-auto"
+              src={place}
+              alt=""
+            />
+          </m.div>
           <m.div
             initial={{ y: '10%', opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -33,7 +40,7 @@ function About() {
                 Recently About Me
               </m.h1>
             </div>
-            <p className="text-md font-serif leading-relaxed indent-8">
+            <p className="text-md font-serif leading-relaxed indent-8 max-md:indent-0">
               Welcome to my portfolio website! My name is Tazkir Furqan, and I
               am a passionate and dedicated self-taught programmer. At 18 years
               old, I began my programming journey while studying for a diploma
@@ -74,6 +81,7 @@ function About() {
             </figcaption>
           </m.div>
         </figure>
+        {/* <Skill /> */}
       </AnimatePresence>
     </Layout>
   );

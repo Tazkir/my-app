@@ -51,9 +51,9 @@ p {
 
 .rightCSS {
   overflow: hidden;
-  --offset: 20vw;
+  --offset: 50vw;
   --move-initial: calc(25% + var(--offset));
-  --move-final: calc(-120% + var(--offset));
+  --move-final: calc(-115% + var(--offset));
 }
 
 @media (max-width: 991.98px) {
@@ -66,7 +66,7 @@ p {
 @media (max-width: 768px) {
   .rightCSS {
     --move-initial: calc(10% + var(--offset));
-    --move-final: calc(-105% + var(--offset));
+    --move-final: calc(-106% + var(--offset));
   }
   .rightCSS div p {
     font-size: 25px;

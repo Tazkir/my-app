@@ -5,7 +5,7 @@ const data = {
       name: 'ChatGpt Clone',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678341540/porfolio/chatGpt_ogkhcp.png',
-      link: 'https://chatgpt-clone-tau.vercel.app/',
+      link: 'https://chatgpt-clone-tazkir.vercel.app/',
       stacks: [
         'https://res.cloudinary.com/simohya/image/upload/v1678341532/porfolio/firebase_axkyy2.png',
         'https://res.cloudinary.com/simohya/image/upload/v1678341532/porfolio/nextauth_wyqtg3.png',

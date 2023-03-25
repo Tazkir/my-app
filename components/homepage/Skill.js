@@ -6,6 +6,8 @@ function Skill() {
     'NextJs',
     'ReactJs',
     'React Native',
+    'Expo',
+    'T3 App',
     'Vercel',
     'MongoDB',
     'Firebase',
@@ -19,6 +21,7 @@ function Skill() {
     'Styled Component',
     'GraphQL',
     'Prisma',
+    'tRPC',
     'PHP',
     'NextAuth',
     'JWT',
@@ -38,6 +41,7 @@ function Skill() {
     'React-Three-Drei',
     'Figma',
     'Photoshop',
+    'Adobe XD',
   ];
   const listItems = skills.map((skill) => <p>{skill}</p>);
 
