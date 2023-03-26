@@ -1,48 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
+import { skills } from '../../utils/data';
 
 function Skill() {
-  const skills = [
-    'NextJs',
-    'ReactJs',
-    'React Native',
-    'Expo',
-    'T3 App',
-    'Vercel',
-    'MongoDB',
-    'Firebase',
-    'Supabase',
-    'Tailwind Css',
-    'Material UI',
-    'Framer Motion',
-    'Stripe',
-    'Sanity.io',
-    'AWS S3',
-    'Styled Component',
-    'GraphQL',
-    'Prisma',
-    'tRPC',
-    'PHP',
-    'NextAuth',
-    'JWT',
-    'NodeJS',
-    'HTML',
-    'CSS',
-    'Javascript',
-    'Typescript',
-    'Github',
-    'Express',
-    'Cors',
-    'Redux Toolkit',
-    'SWR',
-    'React Query',
-    'Framer',
-    'ThreeJS',
-    'React-Three-Drei',
-    'Figma',
-    'Photoshop',
-    'Adobe XD',
-  ];
   const listItems = skills.map((skill) => <p>{skill}</p>);
 
   return (

@@ -49,10 +49,19 @@ p {
   -webkit-transition: 0.3s ease-in-out;
 }
 
+.dropdown-link {
+  @apply items-center justify-center;
+}
+
 .rightCSS {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   overflow: hidden;
   --offset: 50vw;
-  --move-initial: calc(25% + var(--offset));
+  --move-initial: calc(13% + var(--offset));
   --move-final: calc(-115% + var(--offset));
 }
 
@@ -65,7 +74,7 @@ p {
 
 @media (max-width: 768px) {
   .rightCSS {
-    --move-initial: calc(10% + var(--offset));
+    --move-initial: calc(9% + var(--offset));
     --move-final: calc(-106% + var(--offset));
   }
   .rightCSS div p {
@@ -79,7 +88,7 @@ p {
     --move-final: calc(-105% + var(--offset));
   }
   .rightCSS div p {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -94,11 +103,18 @@ p {
   transition: all 0.5s ease-in-out 0s;
 }
 .rightCSS div p {
+  cursor: pointer;
   padding: 5px 20px;
-  font-size: 30px;
+  font-size: 33px;
+  font-weight: bold;
   color: transparent;
   -webkit-text-stroke: 1px white;
-  @apply font-bold;
+}
+
+.rightCSS div p:hover {
+  color: white;
+  -webkit-text-stroke: none;
+  transition: 0.3s ease-in-out;
 }
 
 @keyframes CSSright {

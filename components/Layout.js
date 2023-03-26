@@ -23,7 +23,7 @@ function Layout({ title, children }) {
 
   return (
     <>
-      <Head>
+      <Head oncontextmenu="return false">
         <title>{title ? `${title} | Tazkir Furqan` : 'Tazkir Furqan'}</title>
         <meta
           name="description"
@@ -41,6 +41,7 @@ function Layout({ title, children }) {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className="flex min-h-screen flex-col justify-between">
         <header>
           <nav

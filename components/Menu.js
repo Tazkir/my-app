@@ -16,15 +16,28 @@ function Menu() {
           </Menubar.Trigger>
 
           <Menubar.Portal>
-            <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-              <AnimatePresence>
-                <Menubar.Content className="menu-content divide-y divide-slate-500 p-2 max-sm:top-5 sm:top-6 absolute right-[-10px] max-sm:w-[10em] sm:w-[13em] shadow-md rounded-md">
+            <AnimatePresence>
+              <m.div
+                className="overflow-hidden"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+              >
+                <Menubar.Content className="menu-content divide-y  divide-slate-500 p-2 max-sm:top-5 sm:top-6 absolute right-[-10px] max-sm:w-[10em] sm:w-[13em] shadow-md rounded-md">
                   <Menubar.Item>
                     <DropdownLink
                       className="dropdown-link hover:bg-violet-500 focus:outline-none"
                       href="/about"
                     >
-                      About
+                      <div className="overflow-hidden">
+                        <m.h1
+                          initial={{ y: '100%' }}
+                          animate={{ y: 0 }}
+                          transition={{ delay: 0.5, duration: 0.3 }}
+                        >
+                          {' '}
+                          About
+                        </m.h1>{' '}
+                      </div>
                     </DropdownLink>
                   </Menubar.Item>
                   <Menubar.Item>
@@ -32,7 +45,16 @@ function Menu() {
                       className="dropdown-link hover:bg-violet-500 focus:outline-none"
                       href="/work"
                     >
-                      Work
+                      <div className="overflow-hidden">
+                        <m.h1
+                          initial={{ y: '100%' }}
+                          animate={{ y: 0 }}
+                          transition={{ delay: 0.6, duration: 0.3 }}
+                        >
+                          {' '}
+                          Work
+                        </m.h1>{' '}
+                      </div>
                     </DropdownLink>
                   </Menubar.Item>
                   <Menubar.Item>
@@ -40,7 +62,16 @@ function Menu() {
                       className="dropdown-link hover:bg-violet-500 focus:outline-none"
                       href="/contact"
                     >
-                      Contact
+                      <div className="overflow-hidden">
+                        <m.h1
+                          initial={{ y: '100%' }}
+                          animate={{ y: 0 }}
+                          transition={{ delay: 0.7, duration: 0.3 }}
+                        >
+                          {' '}
+                          Contact
+                        </m.h1>{' '}
+                      </div>
                     </DropdownLink>
                   </Menubar.Item>
                   <Menubar.Item>
@@ -49,12 +80,21 @@ function Menu() {
                       href="https://read.cv/tazkir"
                       target="_blank"
                     >
-                      Read.CV
+                      <div className="overflow-hidden">
+                        <m.h1
+                          initial={{ y: '100%' }}
+                          animate={{ y: 0 }}
+                          transition={{ delay: 0.8, duration: 0.3 }}
+                        >
+                          {' '}
+                          Read.CV
+                        </m.h1>{' '}
+                      </div>
                     </DropdownLink>
                   </Menubar.Item>
                 </Menubar.Content>
-              </AnimatePresence>
-            </m.div>
+              </m.div>
+            </AnimatePresence>
           </Menubar.Portal>
         </Menubar.Menu>
       </Menubar.Root>
