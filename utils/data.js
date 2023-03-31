@@ -194,6 +194,8 @@ export const skills = [
   'Supabase',
   'PlanetScale',
   'AWS S3',
+  'SQL',
+  'No-SQL',
   'NextAuth',
   'Clerk.dev',
   'JWT',

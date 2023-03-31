@@ -2,7 +2,6 @@ import { motion as m, AnimatePresence } from 'framer-motion';
 import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Skill from './Skill';
-import RingSpinningText from './RingSpinningText';
 
 function Hero() {
   return (
@@ -53,11 +52,6 @@ function Hero() {
           </div>
         </m.div>
       </div>
-      {/* <section className="bottom-[20rem]">
-        <h1 class="ring__s">
-          <RingSpinningText />
-        </h1>
-      </section> */}
       <Skill />
     </AnimatePresence>
   );
