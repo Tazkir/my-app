@@ -32,7 +32,10 @@ function Hero() {
           <p className="text-[18px] max-sm:text-[15px] font-sans">
             Welcome to my portfolio! I'm a web developer, specializing in
             crafting beautiful and responsive websites that deliver a seamless
-            user experience.
+            user experience{' '}
+            <Link className="text-slate-200 underline" href="/about">
+              more...
+            </Link>
           </p>
 
           <div className="text-white flex flex-row gap-10 max-sm:gap-7 items-center justify-center pt-5 font-semibold">

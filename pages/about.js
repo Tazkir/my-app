@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Layout from '../components/Layout';
-import place from '../public/about.png';
+import about from '../public/about.jpg';
 import Link from 'next/link';
 import { motion as m, AnimatePresence } from 'framer-motion';
 import Skill from '../components/about/Skill';
@@ -15,12 +15,13 @@ function About() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5, ease: 'easeOut' }}
             exit={{ opacity: 1 }}
-            className="w-full md:w-[100em]"
+            className="w-full md:w-[100em] "
           >
             <Image
-              className="w-24 h-24 md:w-48 md:h-48 md:mt-10 md:rounded-lg rounded-full mx-auto"
-              src={place}
-              alt=""
+              className="w-24 h-24 object-cover md:w-[18em] md:h-[18em] md:mt-10 md:rounded-lg rounded-full mx-auto"
+              src={about}
+              alt="Tazkir Furqan Picture"
+              loading="lazy"
             />
           </m.div>
           <m.div

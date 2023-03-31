@@ -2,10 +2,25 @@ const data = {
   shows: [
     {
       id: '1',
+      name: 'Chirp Clone',
+      image:
+        'https://res.cloudinary.com/simohya/image/upload/v1680009163/porfolio/chirp_usmdlp.png',
+      link: 'https://chirp-clone-indol.vercel.app/',
+      stacks: [
+        'https://res.cloudinary.com/simohya/image/upload/v1680009606/porfolio/clerk_qxpkmm.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1680009606/porfolio/planetscale_ptuzjf.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1680009606/porfolio/prisma_isz1nk.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1680009606/porfolio/trpc_svsyc9.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1680009742/porfolio/t3_ftdl1o.png',
+        'https://res.cloudinary.com/simohya/image/upload/v1678341532/porfolio/next-js_nqv6bm.png',
+      ],
+    },
+    {
+      id: '2',
       name: 'ChatGpt Clone',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678341540/porfolio/chatGpt_ogkhcp.png',
-      link: 'https://chatgpt-clone-tazkir.vercel.app/',
+      link: 'https://chatgpt-clone-tau.vercel.app/',
       stacks: [
         'https://res.cloudinary.com/simohya/image/upload/v1678341532/porfolio/firebase_axkyy2.png',
         'https://res.cloudinary.com/simohya/image/upload/v1678341532/porfolio/nextauth_wyqtg3.png',
@@ -15,7 +30,7 @@ const data = {
       ],
     },
     {
-      id: '2',
+      id: '3',
       name: 'NextJs E-commerce',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678341541/porfolio/nextjs-e-com_fwaqxd.png',
@@ -28,7 +43,7 @@ const data = {
       ],
     },
     {
-      id: '3',
+      id: '4',
       name: 'Medium Clone',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678345241/porfolio/sanity-medium_vobxbe.png',
@@ -40,7 +55,7 @@ const data = {
       ],
     },
     {
-      id: '4',
+      id: '5',
       name: 'Dato CMS Blog',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678345782/porfolio/datocmsblog_xoymvx.png',
@@ -53,7 +68,7 @@ const data = {
       ],
     },
     {
-      id: '5',
+      id: '6',
       name: 'Discord Blockchain',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678351315/porfolio/discordblockchain_n64qsq.png',
@@ -67,7 +82,7 @@ const data = {
       ],
     },
     {
-      id: '6',
+      id: '7',
       name: 'Uber Blockchain',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678351778/porfolio/uberblockchain_cdgcbt.png',
@@ -81,7 +96,7 @@ const data = {
       ],
     },
     {
-      id: '7',
+      id: '8',
       name: 'Amazon Clone',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678352132/porfolio/amazonclone_nghgds.png',
@@ -96,7 +111,7 @@ const data = {
       ],
     },
     {
-      id: '8',
+      id: '9',
       name: 'Private Messaging',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678352801/porfolio/privmsg_dq6zax.png',
@@ -109,7 +124,7 @@ const data = {
       ],
     },
     {
-      id: '9',
+      id: '10',
       name: 'Global Warn ThreeJs',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678353329/porfolio/globalwarning_rbeexq.png',
@@ -122,7 +137,7 @@ const data = {
       ],
     },
     {
-      id: '10',
+      id: '11',
       name: 'Drink ThreeJs',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678353799/porfolio/drink_vvhkzu.png',
@@ -135,7 +150,7 @@ const data = {
       ],
     },
     {
-      id: '11',
+      id: '12',
       name: 'Tesla Clone',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678354236/porfolio/teslaclone_hilq04.png',
@@ -148,7 +163,7 @@ const data = {
       ],
     },
     {
-      id: '12',
+      id: '13',
       name: 'Disney Clone',
       image:
         'https://res.cloudinary.com/simohya/image/upload/v1678354464/porfolio/disney_gmwgam.png',
@@ -171,33 +186,37 @@ export const skills = [
   'Expo',
   'T3 App',
   'Vercel',
+  'Netlify',
+  'Heroku',
   'MongoDB',
   'Firebase',
-  'Supabase',
-  'Tailwind Css',
-  'Material UI',
-  'Framer Motion',
-  'Stripe',
   'Sanity.io',
+  'Supabase',
+  'PlanetScale',
   'AWS S3',
-  'Styled Component',
+  'NextAuth',
+  'Clerk.dev',
+  'JWT',
   'GraphQL',
   'Prisma',
   'tRPC',
   'PHP',
-  'NextAuth',
-  'JWT',
+  'SWR',
+  'React Query',
+  'Express',
+  'Cors',
+  'Tailwind Css',
+  'Material UI',
+  'Styled Component',
+  'Framer Motion',
+  'Stripe',
   'NodeJS',
   'HTML',
   'CSS',
   'Javascript',
   'Typescript',
   'Github',
-  'Express',
-  'Cors',
   'Redux Toolkit',
-  'SWR',
-  'React Query',
   'Framer',
   'ThreeJS',
   'React-three-fiber',
