@@ -48,7 +48,7 @@ function ShowcaseList({ data }) {
               {show.stacks.map((stack) => (
                 <m.div
                   whileHover={{ scale: 1.2 }}
-                  className="flex items-center justify-center w-6 h-6 -mx-[6px] overflow-hidden rounded-full border-2 border-white bg-white"
+                  className="flex items-center justify-center w-6 h-6 -mx-[6px] overflow-hidden rounded-full border-2 border-white bg-white hover:cursor-pointer"
                 >
                   <Image src={stack} height={20} width={20} loading="lazy" />
                 </m.div>
