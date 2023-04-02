@@ -42,38 +42,45 @@ function About() {
               </m.h1>
             </div>
             <p className="text-md font-serif leading-relaxed indent-8 max-md:indent-0">
-              Welcome to my portfolio website! My name is Tazkir Furqan, and I
-              am a passionate and dedicated self-taught programmer. At 18 years
-              old, I began my programming journey while studying for a diploma
-              in computer science at the International Islamic College in
-              Gombak. I started with structured programming using C++, but I
-              quickly discovered my love for web development after learning
-              HTML, CSS, and JavaScript.
+              Hey there, reader! Welcome to the exciting world of Tazkir Furqan,
+              a self-taught programming wizard. This coding prodigy started his
+              journey at just 18 years old while studying for a diploma in
+              computer science, and he quickly discovered his love for web
+              development after mastering HTML, CSS, and JavaScript.
             </p>
             <p className="text-md font-serif leading-relaxed">
-              Since then, I have continued to grow my skills in web development
-              and have become proficient in using React and Next.js. Despite the
-              challenges posed by COVID-19 and financial difficulties, I remain
-              determined to continue learning and problem-solving in
-              programming. As an undergraduate diploma student, I have completed
-              all subjects except for my internship due to the aforementioned
-              challenges.
+              Even amidst the challenges of COVID-19 and financial difficulties,
+              Tazkir remains determined to continue learning and problem-solving
+              in the world of programming. He's a whiz with React and Next.js
+              and has even tackled the intimidating world of Java and
+              object-oriented programming.
             </p>
             <p className="text-md font-serif leading-relaxed">
-              However, I have honed my skills as a self-taught programmer and
-              can learn any stack, including Java and object-oriented
-              programming. On this website, you will find examples of{' '}
-              <Link className="underline text-violet-500" href="/work">
-                my work
-              </Link>{' '}
-              and the projects I have undertaken,{' '}
-              <Link className="underline text-violet-500" href="/work">
-                showcasing
-              </Link>{' '}
-              my ability to design and develop high-quality web applications. I
-              am always eager to take on new challenges and projects and am open
-              to collaboration opportunities. Thank you for visiting my website,
-              and I look forward to connecting with you!
+              On this website, you'll get a glimpse into{' '}
+              <Link
+                className="underline text-violet-500 hover:text-violet-600"
+                href="/work"
+              >
+                Tazkir's work{' '}
+              </Link>
+              and the impressive projects he's taken on,{' '}
+              <Link
+                className="underline text-violet-500 hover:text-violet-600"
+                href="/work"
+              >
+                showcasing{' '}
+              </Link>
+              his ability to design and develop high-quality web applications.
+              He's always up for a new challenge and loves collaborating with
+              others, so don't be shy! Thanks for stopping by, and let's see
+              what exciting programming adventures Tazkir has in{' '}
+              <Link
+                className="underline text-violet-500 hover:text-violet-600"
+                href="/work"
+              >
+                store{' '}
+              </Link>
+              for us!{' '}
             </p>
 
             <figcaption class="font-medium ">

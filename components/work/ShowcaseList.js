@@ -20,13 +20,16 @@ function ShowcaseList({ data }) {
           </div>
 
           <Link target="_blank" href={show.link}>
-            <Image
-              src={show.image}
-              alt={show.name}
-              className="rounded-md"
-              height={100}
-              width={100}
-            />
+            <m.div whileHover={{ scale: 1.1 }}>
+              <Image
+                src={show.image}
+                alt={show.name}
+                className="rounded-md"
+                height={100}
+                width={100}
+                loading="lazy"
+              />
+            </m.div>
           </Link>
 
           <Link target="_blank" href={show.link}>
@@ -43,9 +46,12 @@ function ShowcaseList({ data }) {
             <h1>Tech Stack</h1>
             <div className="flex justify-center items-center">
               {show.stacks.map((stack) => (
-                <div className="flex items-center justify-center w-6 h-6 -mx-[6px] overflow-hidden rounded-full border-2 border-white bg-white">
-                  <Image src={stack} height={20} width={20} />
-                </div>
+                <m.div
+                  whileHover={{ scale: 1.2 }}
+                  className="flex items-center justify-center w-6 h-6 -mx-[6px] overflow-hidden rounded-full border-2 border-white bg-white"
+                >
+                  <Image src={stack} height={20} width={20} loading="lazy" />
+                </m.div>
               ))}
             </div>
           </div>
