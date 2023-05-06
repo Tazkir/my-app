@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion as m, AnimatePresence } from 'framer-motion';
 import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
+import StackList from './stackList';
 
 function ShowcaseList({ data }) {
   return (
@@ -45,14 +46,7 @@ function ShowcaseList({ data }) {
           <div className="flex flex-col place-items-center text-center gap-2">
             <h1>Tech Stack</h1>
             <div className="flex justify-center items-center">
-              {show.stacks.map((stack) => (
-                <m.div
-                  whileHover={{ scale: 1.2 }}
-                  className="flex items-center justify-center w-6 h-6 -mx-[6px] overflow-hidden rounded-full border-2 border-white bg-white hover:cursor-pointer"
-                >
-                  <Image src={stack} height={20} width={20} loading="lazy" />
-                </m.div>
-              ))}
+              <StackList show={show} />
             </div>
           </div>
         </m.div>

@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Menu from './Menu';
 import Social from './Social';
+import Status from './Status';
 
 function Layout({ title, children }) {
   const [color, setColor] = useState(false);
@@ -61,7 +62,7 @@ function Layout({ title, children }) {
 
         <footer className="text-white flex max-sm:flex-col p-5 h-14 items-center place-content-evenly shadow-inner">
           <Social />
-          <span>Copyright © 2023</span>
+          <Status />
         </footer>
       </div>
     </>

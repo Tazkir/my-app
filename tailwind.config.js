@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       animation: {
         text: 'text 5s ease infinite',
+        slideDownAndFade:
+          'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
       },
       keyframes: {
         btnpulse: {
@@ -25,6 +27,10 @@ module.exports = {
             'background-size': '200% 200%',
             'background-position': 'right center',
           },
+        },
+        slideDownAndFade: {
+          from: { opacity: 0, transform: 'translateY(-2px)' },
+          to: { opacity: 1, transform: 'translateY(0)' },
         },
       },
     },
