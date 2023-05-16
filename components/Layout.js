@@ -31,7 +31,7 @@ function Layout({ title, children }) {
           content="Expert Next.js and React Developer in Nilai, Malaysia - Freelance Fullstack Developer Specializing in E-commerce, Landing Pages, and More"
         />
         <meta
-          name="description"
+          name="og:description"
           content="Top-rated Web Developer in Nilai, Malaysia - Next.js, React, and React Native Expert for Frontend and Backend Development, Including E-commerce and Landing Pages"
         />
         <meta

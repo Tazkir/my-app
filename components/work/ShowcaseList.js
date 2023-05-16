@@ -25,7 +25,7 @@ function ShowcaseList({ data }) {
               <Image
                 src={show.image}
                 alt={show.name}
-                className="rounded-md"
+                className="rounded-md bg-white"
                 height={100}
                 width={100}
                 loading="lazy"

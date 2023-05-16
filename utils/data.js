@@ -404,6 +404,7 @@ export const skills = [
   'Supabase',
   'PlanetScale',
   'AWS S3',
+  'Microsoft Azure',
   'SQL',
   'No-SQL',
   'NextAuth',
