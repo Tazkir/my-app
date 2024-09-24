@@ -1,27 +1,40 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion as m, AnimatePresence } from 'framer-motion';
-import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
-import StackList from './stackList';
+import Image from "next/image";
+import Link from "next/link";
+import { motion as m, AnimatePresence } from "framer-motion";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import StackList from "./stackList";
 
 function ShowcaseList({ data }) {
+  const blur = {
+    hidden: { filter: "blur(10px)", opacity: 0 },
+    visible: { filter: "blur(0px)", opacity: 1 },
+  };
+
   return (
-    <AnimatePresence>
+    <>
       {data.shows.map((show) => (
         <m.div
           key={show.id}
-          initial={{ y: 0, opacity: 0 }}
-          animate={{ y: '20%', opacity: 1 }}
-          transition={{ duration: 0.75, ease: 'easeOut' }}
-          exit={{ opacity: 1 }}
-          className="flex flex-row w-auto place-content-evenly max-sm:text-[12px] text-white space-x-5 max-sm:space-x-0 mb-5 gap-5 p-5 shadow-sm border-b"
+          initial={{ y: "5%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            ease: "easeOut",
+            delay: show.id * 0.1,
+          }}
+          className="hello flex flex-row w-auto place-content-evenly max-sm:text-[12px] text-white space-x-5 max-sm:space-x-0 mb-5 gap-5 p-5 shadow-sm border-b"
         >
           <div className="flex justify-center items-center">
             <h1>[{show.id}]</h1>
           </div>
 
           <Link target="_blank" href={show.link}>
-            <m.div whileHover={{ scale: 1.1 }}>
+            <m.div
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 1 }}
+              variants={blur}
+            >
               <Image
                 src={show.image}
                 alt={show.name}
@@ -51,7 +64,7 @@ function ShowcaseList({ data }) {
           </div>
         </m.div>
       ))}
-    </AnimatePresence>
+    </>
   );
 }
 

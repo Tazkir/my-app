@@ -1,0 +1,5 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://tazkirfurqan.online/sitemap.xml

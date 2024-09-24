@@ -12,18 +12,24 @@
     "@heroicons/react": "^2.0.16",
     "@radix-ui/react-menubar": "^1.0.0",
     "@radix-ui/react-tooltip": "^1.0.5",
+    "@vercel/analytics": "^1.0.2",
+    "@vercel/speed-insights": "^1.0.2",
+    "dat.gui": "^0.7.9",
     "framer-motion": "^7.2.0",
+    "gsap": "^3.12.2",
     "next": "^13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-ga": "^3.3.1",
     "react-icons": "^4.7.1",
-    "sharp": "^0.31.3"
+    "sharp": "^0.31.3",
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.0",
+    "file-loader": "^6.2.0",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.2"
   }

@@ -31,7 +31,7 @@ p {
 }
 
 .menu-content {
-  background: rgba(22, 22, 26, 0.1);
+  background: rgba(22, 22, 26, 0.8);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: none;
@@ -53,76 +53,47 @@ p {
   @apply items-center justify-center;
 }
 
-.rightCSS {
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow: hidden;
-  --offset: 50vw;
-  --move-initial: calc(13% + var(--offset));
-  --move-final: calc(-115% + var(--offset));
+.skill:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 991.98px) {
-  .rightCSS {
-    --move-initial: calc(10% + var(--offset));
-    --move-final: calc(-110% + var(--offset));
-  }
-}
-
-@media (max-width: 768px) {
-  .rightCSS {
-    --move-initial: calc(9% + var(--offset));
-    --move-final: calc(-106% + var(--offset));
-  }
-}
-
-@media (max-width: 575.98px) {
-  .rightCSS {
-    --move-initial: calc(9% + var(--offset));
-    --move-final: calc(-105% + var(--offset));
-  }
-}
-
-.rightCSS div {
+.skill {
+  cursor: pointer;
+  padding: 5px 20px;
+  font-size: clamp(26px, 5vw, 33px);
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: none;
   width: fit-content;
   text-overflow: ellipsis;
   overflow: visible;
   white-space: nowrap;
   display: flex;
   flex-direction: row;
-  animation: CSSright linear 60s infinite;
-  transition: all 0.5s ease-in-out 0s;
-}
-.rightCSS div p {
-  cursor: pointer;
-  padding: 5px 20px;
-  font-size: 33px;
-  font-weight: bold;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
 }
 
-.rightCSS div p:hover {
-  color: white;
-  -webkit-text-stroke: none;
-  transition: 0.3s ease-in-out;
-}
+.layer {
+  --background: #ffffff;
+  --color: rgb(255, 255, 255);
+  --height: 4em;
+  --width: 4em;
+  --fade-stop: 80%;
+  --offset: -100px;
 
-@keyframes CSSright {
-  0% {
-    transform: translate3d(var(--move-initial), 0, 0);
-  }
-
-  100% {
-    transform: translate3d(var(--move-final), 0, 0);
-  }
+  width: calc(100% + var(--offset));
+  height: var(--height);
+  left: calc(var(--offset) / 2 * -1);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(
+      to left,
+      var(--background) var(--fade-stop),
+      transparent
+    ),
+    linear-gradient(to right, var(--background) var(--fade-stop), transparent),
+    linear-gradient(black, black);
 }
-/* .rightCSS:hover div {
-  animation-play-state: paused;
-} */
 
 @media (max-width: 300px) {
   body {
@@ -138,7 +109,7 @@ section:first-of-type {
   color: white;
   min-height: 150px;
   height: calc(2 * var(--buffer));
-  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
   display: flex;
   place-items: center;
 }
@@ -167,4 +138,82 @@ section:last-of-type {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.marquee {
+  font-size: clamp(2rem, 2.5vw, 4rem);
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.marquee__text {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.marquee__line {
+  display: flex;
+  position: relative;
+
+  &:nth-child(2) {
+    justify-content: flex-end;
+    z-index: 1;
+  }
+}
+
+.marquee__sentence {
+  padding-right: 30px;
+  white-space: nowrap;
+}
+
+/* .swiper {
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+} */
+
+/* .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
+.gridLine {
+  --background: #ffffff;
+  --color: rgba(255, 255, 255, 0.5);
+  --height: 1px;
+  --width: 5px;
+  --fade-stop: 90%;
+  /* Bleed in or out from the container */
+  --offset: -100px;
+
+  position: absolute;
+  width: calc(100% + var(--offset));
+  height: var(--height);
+  left: calc(var(--offset) / 2 * -1);
+
+  background: linear-gradient(
+    to right,
+    var(--color),
+    var(--color) 50%,
+    transparent 0,
+    transparent
+  );
+  background-size: var(--width) var(--height);
+
+  /* Fade out the edges */
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(
+      to left,
+      var(--background) var(--fade-stop),
+      transparent
+    ),
+    linear-gradient(to right, var(--background) var(--fade-stop), transparent),
+    linear-gradient(black, black);
 }

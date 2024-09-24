@@ -1,96 +1,46 @@
-import Image from 'next/image';
-import Layout from '../components/Layout';
-import about from '../public/about.png';
-import Link from 'next/link';
-import { motion as m, AnimatePresence } from 'framer-motion';
-import Skill from '../components/about/Skill';
+import Image from "next/image";
+import Layout from "../components/Layout";
+import about from "../public/about.png";
+import { motion as m, AnimatePresence } from "framer-motion";
+import Skill from "../components/about/Skill";
+import Desc from "../components/about/Desc";
+import ExpTree from "../components/about/ExpTree";
 
 function About() {
   return (
     <Layout title="About">
       <AnimatePresence>
-        <figure className="md:flex rounded-xl mt-10 p-8 md:p-0 overflow-hidden">
+        <figure className="md:flex mt-10 p-2 md:p-0 overflow-hidden">
           <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1.5, ease: 'easeOut' }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
             exit={{ opacity: 1 }}
-            className="w-full md:w-[100em] "
+            className="w-full md:w-[100em] flex justify-center "
           >
+            {/* <div className="absolute max-md:w-24 max-md:h-w-24 w-96 h-96 -z-10">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#8A3FFC"
+                  d="M42.8,-21.9C55.8,-2.2,66.8,21.4,59.4,39.1C51.9,56.9,26,68.8,1.3,68.1C-23.4,67.4,-46.7,53.9,-56.6,34.8C-66.4,15.6,-62.7,-9.2,-51,-28.2C-39.4,-47.2,-19.7,-60.3,-2.4,-58.9C14.9,-57.5,29.8,-41.7,42.8,-21.9Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
+            </div> */}
             <Image
-              className="w-24 h-24 object-cover md:w-[18em] md:h-[18em] md:mt-10 md:rounded-lg rounded-full mx-auto bg-violet-500 border-2 border-white"
+              className="w-24 h-24 object-cover md:w-[18em] md:h-[18em] md:mt-10 md:rounded-lg rounded-full mx-auto border-2 border-zinc-700 overflow-hidden"
               src={about}
               alt="Tazkir Furqan's Picture"
               loading="lazy"
             />
           </m.div>
-          <m.div
-            initial={{ y: '10%', opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5, ease: 'easeOut' }}
-            exit={{ opacity: 1 }}
-            className="pt-6 md:p-8 text-center md:text-left space-y-4 "
-          >
-            <div className="overflow-hidden">
-              <m.h1
-                initial={{ y: '100%' }}
-                animate={{ y: 0 }}
-                transition={{ delay: 0.5, duration: 1 }}
-                className="text-white text-[20px]"
-              >
-                Recently About Me
-              </m.h1>
-            </div>
-            <p className="text-md font-serif leading-relaxed indent-8 max-md:indent-0">
-              Hey there, reader! Welcome to the exciting world of Tazkir Furqan,
-              a self-taught programming wizard. This coding prodigy started his
-              journey at just 18 years old while studying for a diploma in
-              computer science, and he quickly discovered his love for web
-              development after mastering HTML, CSS, and JavaScript.
-            </p>
-            <p className="text-md font-serif leading-relaxed">
-              Even amidst the challenges of COVID-19 and financial difficulties,
-              Tazkir remains determined to continue learning and problem-solving
-              in the world of programming. He's a whiz with React and Next.js
-              and has even tackled the intimidating world of Java and
-              object-oriented programming.
-            </p>
-            <p className="text-md font-serif leading-relaxed">
-              On this website, you'll get a glimpse into{' '}
-              <Link
-                className="underline text-violet-500 hover:text-violet-600"
-                href="/work"
-              >
-                Tazkir's work{' '}
-              </Link>
-              and the impressive projects he's taken on,{' '}
-              <Link
-                className="underline text-violet-500 hover:text-violet-600"
-                href="/work"
-              >
-                showcasing{' '}
-              </Link>
-              his ability to design and develop high-quality web applications.
-              He's always up for a new challenge and loves collaborating with
-              others, so don't be shy! Thanks for stopping by, and let's see
-              what exciting programming adventures Tazkir has in{' '}
-              <Link
-                className="underline text-violet-500 hover:text-violet-600"
-                href="/work"
-              >
-                store{' '}
-              </Link>
-              for us!{' '}
-            </p>
 
-            <figcaption class="font-medium ">
-              <div className="text-violet-600">Tazkir Furqan</div>
-              <div className="text-slate-700">Web Dev</div>
-            </figcaption>
-          </m.div>
+          <Desc />
         </figure>
-        {/* <Skill /> */}
       </AnimatePresence>
+
+      <ExpTree />
+      <Skill />
     </Layout>
   );
 }

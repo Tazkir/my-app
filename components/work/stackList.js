@@ -1,19 +1,26 @@
-import * as Tooltip from '@radix-ui/react-tooltip';
-import { motion as m } from 'framer-motion';
-import Image from 'next/image';
+import * as Tooltip from "@radix-ui/react-tooltip";
+import { motion as m } from "framer-motion";
+import Image from "next/image";
 
 export default function StackList({ show }) {
   return (
     <>
       {show.stacks.map((stack) => (
         <m.div
+          key={stack.id}
           whileHover={{ scale: 1.2, y: -5 }}
           className=" flex items-center justify-center w-6 h-6 -mx-[6px] overflow-hidden rounded-full border-2 border-white bg-white hover:cursor-pointer"
         >
           <Tooltip.Provider>
             <Tooltip.Root>
               <Tooltip.Trigger asChild>
-                <Image src={stack.url} height={20} width={20} loading="lazy" />
+                <Image
+                  src={stack.url}
+                  alt={stack.name}
+                  height={20}
+                  width={20}
+                  loading="lazy"
+                />
               </Tooltip.Trigger>
               <Tooltip.Portal>
                 <Tooltip.Content
