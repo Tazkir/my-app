@@ -50,7 +50,7 @@ function Layout({ title, children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen flex flex-col">
+      <main className="relative flex flex-col min-h-screen">
         <header>
           <nav
             className={
@@ -65,17 +65,17 @@ function Layout({ title, children }) {
           </nav>
         </header>
 
-        <main className="px-2 w-full flex-1">
-          {children}
+        <main className="flex-grow flex-1 py-5 px-2">
           <Analytics />
           <SpeedInsights />
+          {children}
         </main>
 
         <footer className="text-white flex max-sm:flex-col py-2 px-5 h-14 items-center justify-evenly shadow-inner">
           <Social />
           <Status />
         </footer>
-      </div>
+      </main>
     </>
   );
 }
