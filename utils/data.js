@@ -67,7 +67,16 @@ const data = {
       id: "1",
       name: "Retis - E-Commerce",
       link: "https://retis.tazkirfurqan.online/",
-      cat: "E-Commerce",
+      cat: [
+        { name: "NextJs" },
+        { name: "ReactJs" },
+        { name: "Payload CMS" },
+        { name: "Tailwind Css" },
+        { name: "Trpc" },
+        { name: "NodeJs" },
+        { name: "Typescript" },
+        { name: "TanStack Query" },
+      ],
       desc: "E-commerce platform build with headless CMS using Payload CMS",
       image:
         "https://res.cloudinary.com/simohya/image/upload/v1704715915/porfolio/retis_nklspr.png",
@@ -81,6 +90,7 @@ const data = {
       ],
     },
   ],
+
   shows: [
     {
       id: "1",
@@ -468,6 +478,8 @@ const data = {
   ],
 };
 
+export default data;
+
 export const skills = [
   "NextJs",
   "ReactJs",
@@ -517,8 +529,6 @@ export const skills = [
   "Photoshop",
   "Adobe XD",
 ];
-
-export default data;
 
 export const experiences = [
   {

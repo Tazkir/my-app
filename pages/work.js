@@ -7,13 +7,14 @@ function work() {
   return (
     <Layout title="Work">
       <div className="w-full flex flex-col">
-        <div className="flex flex-col justify-center items-center pt-10">
+        <div className="flex flex-col justify-center items-center pt-10 border-b border-white/20">
           <h1 className="text-white text-xl font-bold">Side Project</h1>
           <p className="text-center">Check out my side project</p>
-          <div className="">
+          <div className="py-10 flex flex-col gap-10">
             <Sidecase data={data} />
           </div>
         </div>
+
         <div className="flex flex-col place-items-center space-y-5 pt-10 w-full pb-2">
           <h1 className="text-white text-xl font-bold">Case Studies</h1>
           <p className="text-center">
