@@ -28,7 +28,7 @@ function Hero() {
     hidden: { y: "100%" },
     visible: {
       y: 0,
-      transition: { delay: 0.5, duration: 0.5, type: "spring", stiffness: 120 },
+      transition: { delay: 0.5, duration: 0.5, type: "spring", stiffness: 90 },
     },
   };
 
