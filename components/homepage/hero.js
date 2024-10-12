@@ -10,7 +10,7 @@ function Hero() {
       opacity: 1,
       y: "20%",
       transition: {
-        duration: 0.75,
+        duration: 0.3,
         ease: "easeOut",
         when: "beforeChildren",
         staggerChildren: 0.2,
@@ -75,23 +75,15 @@ function Hero() {
           className="text-white flex flex-row gap-10 max-sm:gap-7 items-center justify-center pt-5 font-semibold max-sm:pb-2 pb-10"
         >
           <Link href="/contact">
-            <m.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="animate-[btnpulse_2s_infinite] flex flex-row items-center justify-center cursor-pointer gap-2 active:bg-violet-900 hover:bg-violet-500 bg-violet-600 h-[3em] w-[8em] max-sm:text-sm max-sm:h-[3em] max-sm:w-[8em] rounded-full"
-            >
+            <div className="animate-[btnpulse_2s_infinite] flex flex-row items-center justify-center cursor-pointer gap-2 active:bg-violet-900 hover:bg-violet-500 bg-violet-600 h-[3em] w-[8em] max-sm:text-sm max-sm:h-[3em] max-sm:w-[8em] rounded-full">
               <h1>Reach Me</h1> <ArrowUpRightIcon className="h-4 w-4" />
-            </m.div>
+            </div>
           </Link>
           <Link href="/work">
-            <m.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex flex-row items-center justify-center cursor-pointer gap-2 border-2 active:bg-violet-700 hover:bg-white hover:text-black h-[3em] w-[8em] max-sm:text-sm max-sm:h-[3em] max-sm:w-[8em] hover:border-none rounded-full"
-            >
+            <div className="flex flex-row items-center justify-center cursor-pointer gap-2 border-2 active:bg-violet-700 hover:bg-white hover:text-black h-[3em] w-[8em] max-sm:text-sm max-sm:h-[3em] max-sm:w-[8em] hover:border-none rounded-full">
               <h1>My Work</h1>{" "}
               <ArrowUpRightIcon className="animate-pulse h-4 w-4" />
-            </m.div>
+            </div>
           </Link>
         </m.div>
         <m.div variants={childVariants}>

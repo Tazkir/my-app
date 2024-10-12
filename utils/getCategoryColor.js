@@ -16,6 +16,6 @@ export function getCategoryColor(categoryName) {
     case "TanStack Query":
       return "bg-red-400";
     default:
-      return "bg-gray-300"; // Default color if no match is found
+      return "bg-violet-500";
   }
 }
