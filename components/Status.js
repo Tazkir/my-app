@@ -8,7 +8,7 @@ function Status() {
   return (
     <>
       <div className="flex flex-row gap-5 items-center py-1">
-        <span className="max-sm:text-[12px]">Tazkir Furqan © 2024</span>
+        <span className="max-sm:text-[12px]">Tazkir Furqan © 2024 - 2026</span>
         <div className="flex flex-row gap-1 justify-center items-center">
           <div
             className={`w-2 h-2 rounded-full ${
