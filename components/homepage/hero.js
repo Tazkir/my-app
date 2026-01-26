@@ -2,6 +2,7 @@ import { motion as m, AnimatePresence } from "framer-motion";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Marquee from "../marquee";
+import Review from "./Review";
 
 function Hero() {
   const containerVariants = {
@@ -39,7 +40,7 @@ function Hero() {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="text-center space-y-5"
+        className="text-center space-y-7"
       >
         <div className="overflow-hidden">
           <m.h1
@@ -89,6 +90,10 @@ function Hero() {
         <m.div variants={childVariants}>
           <Marquee />
         </m.div>
+
+        {/* <m.div variants={childVariants}>
+          <Review />
+        </m.div> */}
       </m.div>
     </AnimatePresence>
   );

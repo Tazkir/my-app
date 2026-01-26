@@ -8,10 +8,10 @@ function Menu() {
     <>
       <Menubar.Root className="relative inline-block">
         <Menubar.Menu>
-          <Menubar.Trigger className="text-white max-sm:hidden">
+          <Menubar.Trigger type="button" className="text-white max-sm:hidden">
             <h1>Menu</h1>
           </Menubar.Trigger>
-          <Menubar.Trigger>
+          <Menubar.Trigger type="button">
             <HiOutlineBars2 className="h-6 w-6 cursor-pointer text-white sm:hidden" />
           </Menubar.Trigger>
 

@@ -1,6 +1,6 @@
 const data = {
   status: {
-    isOn: true,
+    isOn: false,
   },
 
   mainStack: [
@@ -61,7 +61,57 @@ const data = {
         "https://res.cloudinary.com/simohya/image/upload/v1678343784/porfolio/mongodb_cgyilr.png",
     },
   ],
-
+  main: [
+    {
+      id: "1",
+      name: "Lux Home Algarve | Luxury Real Estate in the Algarve",
+      link: "https://www.luxhomealgarve.com/",
+      cat: [
+        { name: "NextJs" },
+        { name: "ReactJs" },
+        { name: "Shadcn UI" },
+        { name: "Tailwind Css" },
+        { name: "Prisma" },
+        { name: "NodeJs" },
+        { name: "Typescript" },
+      ],
+      desc: "Frontend development for a luxury real estate website in the Algarve region.",
+      image:
+        "https://res.cloudinary.com/simohya/image/upload/v1743493173/porfolio/algarve_vmffvm.png",
+      stacks: [
+        {
+          name: "Next js",
+        },
+        {
+          name: "Prisma",
+        },
+      ],
+    },
+    {
+      id: "2",
+      name: "JDA Adventures | Hiking & Adventure Tours",
+      link: "https://adventures.jdaempire.com/",
+      cat: [
+        { name: "NextJs" },
+        { name: "ReactJs" },
+        { name: "Shadcn UI" },
+        { name: "Tailwind Css" },
+        { name: "Supabase" },
+        { name: "Typescript" },
+      ],
+      desc: "Full-stack development for a hiking and adventure tours website.",
+      image:
+        "https://res.cloudinary.com/simohya/image/upload/v1769416256/porfolio/Screenshot_2026-01-26_162420_xwsyw3.png",
+      stacks: [
+        {
+          name: "Next js",
+        },
+        {
+          name: "Supabase",
+        },
+      ],
+    },
+  ],
   sides: [
     {
       id: "1",
@@ -86,6 +136,31 @@ const data = {
         },
         {
           name: "Payload CMS",
+        },
+      ],
+    },
+    {
+      id: "2",
+      name: "AgencyJoy - Ai Agency",
+      link: "https://agencyjoy.vercel.app/",
+      cat: [
+        { name: "NextJs" },
+        { name: "ReactJs" },
+        { name: "Typescript" },
+        { name: "Tailwind Css" },
+        { name: "UI Shadcn" },
+        { name: "Framer Motion" },
+        { name: "Frontend Development" },
+      ],
+      desc: "Cutting-edge template crafted for AI agencies. Includes expressive animations.",
+      image:
+        "https://res.cloudinary.com/simohya/image/upload/v1734110011/porfolio/1_hph24h.png",
+      stacks: [
+        {
+          name: "Next js",
+        },
+        {
+          name: "Framer Motion",
         },
       ],
     },

@@ -1,5 +1,5 @@
-import '../styles/globals.css';
-import Ga from '../components/Ga';
+import "../styles/globals.css";
+import Ga from "../components/Ga";
 
 function MyApp({ Component, pageProps }) {
   return (

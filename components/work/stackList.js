@@ -7,7 +7,7 @@ export default function StackList({ show }) {
     <>
       {show.stacks.map((stack) => (
         <m.div
-          key={stack.id}
+          key={stack.id + 1}
           whileHover={{ scale: 1.2, y: -5 }}
           className=" flex items-center justify-center w-6 h-6 -mx-[6px] overflow-hidden rounded-full border-2 border-white bg-white hover:cursor-pointer"
         >

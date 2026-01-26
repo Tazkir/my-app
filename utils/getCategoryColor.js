@@ -1,6 +1,7 @@
 export function getCategoryColor(categoryName) {
   switch (categoryName) {
     case "NextJs":
+    case "UI Shadcn":
     case "Payload CMS":
       return "bg-black";
     case "ReactJs":
@@ -15,6 +16,10 @@ export function getCategoryColor(categoryName) {
       return "bg-blue-600";
     case "TanStack Query":
       return "bg-red-400";
+    case "Prisma":
+      return "bg-green-500";
+    case "Supabase":
+      return "bg-green-500";
     default:
       return "bg-violet-500";
   }

@@ -8,6 +8,7 @@ import Social from "./Social";
 import Status from "./Status";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Review from "./homepage/Review";
 
 function Layout({ title, children }) {
   const [color, setColor] = useState(false);
@@ -26,31 +27,52 @@ function Layout({ title, children }) {
 
   return (
     <>
-      <Head oncontextmenu="return false">
+      <Head>
         <title>{title ? `${title} | Tazkir Furqan` : "Tazkir Furqan"}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-        <meta property="og:title" content="Tazkir Furqan" key="title" />
+        {/* SEO Meta Tags */}
         <meta
-          property="description"
-          content="Expert Next.js and React Developer in Nilai, Malaysia - Freelance Fullstack Developer Specializing in E-commerce, Landing Pages, and More"
-          key="description"
+          name="description"
+          content={
+            title
+              ? `${title} - Expert Web, Website, Next.js and React Developer in Nilai, Malaysia. Specializing in E-commerce, Landing Pages, and Web Applications.`
+              : "Expert Web, Website, Next.js and React Developer in Nilai, Malaysia - Freelance Fullstack Developer Specializing in E-commerce, Landing Pages, and More"
+          }
+        />
+
+        {/* Open Graph Meta Tags (for Social Media Sharing) */}
+        <meta
+          property="og:title"
+          content={title ? `${title} | Tazkir Furqan` : "Tazkir Furqan"}
         />
         <meta
           property="og:description"
-          content="Top-rated Web Developer in Nilai, Malaysia - Next.js, React, and React Native Expert for Frontend and Backend Development, Including E-commerce and Landing Pages"
-          key="og:description"
+          content="Top-rated Web Developer in Nilai, Malaysia - Web, Website, Next.js, React Developer, React Native Expert for Frontend and Backend Development, Including E-commerce and Landing Pages."
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tazkir-furqan.vercel.app" />
+        <meta
+          property="og:image"
+          content="https://tazkir-furqan.vercel.app/og-image.jpg"
+        />
+
+        {/* Google Verification */}
         <meta
           name="google-site-verification"
           content="oCudJW5eYB2syqTjncL2wG5fzAR_7EC4ExL_o2wVQSU"
         />
 
+        {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="relative flex flex-col min-h-screen">
+      <main className="relative flex flex-col min-h-screen overflow-hidden">
+        {/* <div className="fixed bottom-4 -left-56 hover:-left-12 transition-all z-50 ">
+          <Review />
+        </div> */}
+
         <header>
           <nav
             className={

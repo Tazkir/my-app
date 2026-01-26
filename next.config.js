@@ -1,13 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+  openAnalyzer: false,
+});
+
+const nextConfig = withBundleAnalyzer({
   reactStrictMode: true,
   images: {
     domains: ["res.cloudinary.com"],
   },
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // Allow builds even with ESLint errors
   },
   webpack: (config) => {
     // Add file-loader rule for handling PDFs
@@ -27,6 +31,6 @@ const nextConfig = {
 
     return config;
   },
-};
+});
 
 module.exports = nextConfig;

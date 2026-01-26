@@ -30,10 +30,10 @@ function contact() {
               <i> work together </i> to bring your vision to life.
               <div>
                 <Link
-                  href="mailto: tazkirfurqan@protonmail.com"
+                  href="mailto: tazkirfurqan@gmail.com"
                   className="flex flex-row items-center justify-center gap-2 decoration-wavy decoration-2 underline text-purple-500"
                 >
-                  tazkirfurqan@protonmail.com{" "}
+                  tazkirfurqan@gmail.com{" "}
                   <ArrowUpRightIcon className="animate-bounce h-6 max-sm:h-4 w-6 max-sm:w-4 text-white" />
                 </Link>
               </div>{" "}

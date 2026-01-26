@@ -11,34 +11,46 @@ function Social() {
     <div className="flex flex-row gap-5">
       <Link
         target="_blank"
+        aria-label="GitHub Profile"
+        title="GitHub Profile"
         href="https://github.com/Tazkir"
         className="flex flex-row items-center gap-2 hover:underline"
       >
-        <Image src={github} height={18} width={18} />
+        <Image src={github} alt="github" height={18} width={18} />
+        <span className="sr-only">GitHub</span>
         <ArrowUpRightIcon className="h-2.5 w-2.5" />
       </Link>
       <Link
         target="_blank"
+        aria-label="LinkedIn Profile"
+        title="LinkedIn Profile"
         href="https://www.linkedin.com/in/tazkir-furqan-8915332a0"
         className="flex flex-row items-center gap-2 hover:underline"
       >
-        <Image src={linkedin} height={18} width={18} />{" "}
+        <Image src={linkedin} alt="linkedin" height={18} width={18} />{" "}
+        <span className="sr-only">LinkedIn</span>
         <ArrowUpRightIcon className="h-2.5 w-2.5" />
       </Link>
       <Link
         target="_blank"
+        aria-label="WhatsApp Contact"
+        title="WhatsApp Contact"
         href="https://wa.link/td0x8t"
         className="flex flex-row items-center gap-2 hover:underline"
       >
-        <Image src={whatsapp} height={18} width={18} />{" "}
+        <Image src={whatsapp} alt="whatsapp" height={18} width={18} />{" "}
+        <span className="sr-only">WhatsApp</span>
         <ArrowUpRightIcon className="h-2.5 w-2.5" />
       </Link>
       <Link
         target="_blank"
+        aria-label="Email Tazkir Furqan"
+        title="Email Tazkir Furqan"
         href="mailto: tazkirfurqan@gmail.com"
         className="flex flex-row items-center gap-2 hover:underline"
       >
-        <Image src={email} height={18} width={18} />{" "}
+        <Image src={email} alt="email" height={18} width={18} />{" "}
+        <span className="sr-only">Email</span>
         <ArrowUpRightIcon className="h-2.5 w-2.5" />
       </Link>
     </div>
