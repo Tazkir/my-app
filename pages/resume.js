@@ -1,6 +1,5 @@
-import React from "react";
 // import Layout from "../components/Layout";
-import Resume from "../public/resume/Resume - Muhammad Tazkir Furqan.pdf";
+import Resume from "../public/resume/Resume - Tazkir Furqan.pdf";
 
 function resume() {
   return (
